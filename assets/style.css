@@ -124,7 +124,7 @@ p {
    margin-bottom: 60px;
    font-size: 22px;
    color: #fff;
-   line-height: 1.5;
+   line-height: 1.5; /* Межстрочный отступ */
    font-weight: 400;
 }
 
@@ -162,3 +162,38 @@ p {
    background-color: #cc3737;
 }
 /* При наведении курсора цвет фона кнопки будет изменяться цвет кнопки */
+
+/*==================FEATURES=====================*/
+
+.features {
+   display: flex;
+   flex-wrap: wrap; /*Значение, при котором разрешается перенос элементов (флексов) на другую строку*/
+   margin: 95px 0; /*Отступ сверху и снизу до items*/
+}
+
+.features__item {
+   width: 33.33333%; /*Каждый item - это треть от ширины блока (в одной строке 3 items)*/
+   margin: 25px 0;
+   padding: 0 40px; /*Расстояние с боков блоков*/
+   text-align: center; /*Выравнивание текста (контента) по центру*/
+}
+
+.features__icon {
+   margin-bottom: 25px; /*Расстояние между заголовком и иконкой*/
+}
+
+.features__title {
+   margin-bottom: 20px; /*Расстояние между заголовком и текстом*/
+
+   font-size: 14px;
+   color: #2d3033;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.features__text {
+   font-size: 14px;
+   line-height: 1.5; /* Межстрочный отступ */
+   color: #6c7279;
+
+}
